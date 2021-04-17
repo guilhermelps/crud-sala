@@ -1,0 +1,23 @@
+.hydrated {
+  width: 100%;
+}
+
+.login-container .container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 80vw;
+}
+
+.login-container .container .container-login-img {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.login-container .container .container-login-img .login-img {
+  width: 125px;
+}

@@ -1,34 +1,28 @@
-<ion-content class="container" [fullscreen]="true">
-  <ion-row>
-    <ion-img src="/assets/icon/user.svg"></ion-img>
-  </ion-row>
-  <ion-row>
-    <ion-col>
-      <ion-row>
-        <ion-col>
-          <ion-item>
-            <ion-label position="floating">Email</ion-label>            
-            <ion-input type="text"></ion-input>
-          </ion-item>
-          <ion-item >
-            <ion-label position="floating">Senha</ion-label>
-            <ion-input type="password"></ion-input>
-          </ion-item>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col>
-          <ion-item lines="none">
-            <a color="primary" class="small-text" [routerLink]="['/authentication/forgot-password']">Esqueceu a senha?</a><br>
-          </ion-item>
-          <ion-item lines="none">
-            <ion-button expand="block" color="primary" [routerLink]="['/pages/home']">Entrar</ion-button>
-          </ion-item>
-          <ion-item lines="none">
-            <ion-button expand="block" color="light" [routerLink]="['/authentication/register']">Cadastrar</ion-button>
-          </ion-item>
-        </ion-col>
-      </ion-row>
-    </ion-col>
-  </ion-row>
+<ion-content class="login-container" [fullscreen]="true">
+  <ion-grid class="container">
+    <ion-row class="container-login-img">
+      <ion-img class="login-img" src="/assets/icon/user.svg"></ion-img>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item >
+          <ion-label position="floating">Senha</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item lines="none">
+          <a color="primary" class="small-text" [routerLink]="['/authentication/forgot-password']">Esqueceu a senha?</a><br>
+        </ion-item>
+        <ion-button expand="block" color="primary" [routerLink]="['/pages/home']">Entrar</ion-button>
+        <ion-button expand="block" color="light" [routerLink]="['/authentication/register']">Cadastrar</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

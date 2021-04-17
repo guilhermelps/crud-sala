@@ -1,0 +1,45 @@
+.container {
+  padding: .5rem 1rem;
+}
+
+.container .ind {
+  align-items: center;
+  display: flex;
+  height: 150px;
+  justify-content: space-between;
+  margin: .5rem 0;
+  padding: 0 1.5rem;
+  width: 90vw;
+}
+
+.container .ind.red {
+  background-color: #b50b2d;
+}
+
+.container .ind.yellow {
+  background-color: #fcb603;
+}
+
+.container .ind .icon {
+  font-size: 5rem;
+}
+
+.container .ind .ind-content {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.container .ind .ind-content h3 {
+  text-align: right;
+}
+
+.container .ind .ind-content p {
+  font-size: 1.2rem;
+}
+
+.container .ind-list {
+  margin: 0.5rem 0;
+}
+
